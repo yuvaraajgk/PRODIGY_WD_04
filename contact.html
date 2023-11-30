@@ -1,0 +1,173 @@
+!DOCTYPE html>
+<style>
+    #icons{
+        width:80px;
+        height:80px;    }
+
+     .button {
+  background-color: azure;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+footer{
+background-color: black;
+text-align: center;
+color: azure;
+font-family: 'Comme', sans-serif;
+}
+body{
+background-color: #434242;
+color:aliceblue;
+background-image: url("./assets/contact.jpg");
+background-size: 1920px 1080px;
+}
+header{
+background-color: black;
+text-align: center;
+color: maroon;
+font-family: 'Comme', sans-serif;
+
+}
+nav{
+text-align: center;
+letter-spacing: 2px;
+color:;
+font-size: 30px;
+background-color: black;
+}
+a:link {
+font-family: 'Comme', sans-serif;
+color: black;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+font-family: 'Comme', sans-serif;
+color: teal;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+font-family: 'Comme', sans-serif;
+color: purple;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+font-family: 'Comme', sans-serif;
+color: white;
+background-color: transparent;
+text-decoration: underline;
+}
+@media print {
+    .pagebreak { page-break-before: always; } 
+}
+
+</style>
+<html style="page-break-after:100px;">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&display=swap" rel="stylesheet">
+        <title>Contact</title>
+    </head>
+<body>
+
+    <header>
+        <br>    
+        <br>
+            <p1 style=" font-family: 'Comme', sans-serif; color: white; background-color: black;font-size: 50px;"> CONTACT </p1>
+        <br>
+        <br>
+        <nav>
+            <button class="button"><a href="./index.html"> HOME</a></button>
+            <button class="button"> <a href="./aboutme.html"> ABOUT ME</a></button>
+    
+            <button class="button"><a href="./contact.html"> CONTACT</a></button>
+        </nav>
+        <br>
+        <br>
+    </header>
+    <section style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <h1 style="text-align: center; letter-spacing: 3px; font-size: 60px;  font-family: 'Comme', sans-serif;"> Ways to contact</h1>
+         
+        </h2>
+
+    </section>
+    <form style="font-family: 'Comme',sans-serif;font-size: 20px; position: relative;left: 30px;">
+        <label>Name</label>
+        <br>
+        <input style="background-color: #494646;; type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label>E-mail</label>
+        <br>
+        <input style="background-color: #494646; type="text" id="email" name="email" required>
+        <br>
+        <br>
+        <label>Phone number</label>
+        <br>
+        <input style="background-color: #494646; type="text" id="phone" name="phone">
+        <br>
+        <br>
+        <label>Feedback/Message</label>
+        <br>
+        <input style="width:500px; height:100px;background-color: #494646; type="text" id="msg" name="msg">
+        <br>
+        <br>
+        <input style="width:200px; height:100px;background-color: #494646; font-size:30px;" type="submit" value="Submit" onclick="save()">
+    </form>
+    <br>
+
+    <br>
+    <br>
+    
+    
+<script>
+
+
+
+</script>
+    
+
+    
+    <script>
+        function save(){
+            var name=document.getElementById("name").value;
+            localStorage.setItem("Name",name);
+            var email=document.getElementById("email").value;
+            localStorage.setItem("Email",email);
+            var phone=document.getElementById("phone").value;
+            localStorage.setItem("Phone Number",phone);
+            var msg=document.getElementById("msg").value;
+            localStorage.setItem("Message",msg);
+            alert("Thanks for contacting "+ name+"!");
+
+        }
+    </script>
+      
+</body>
+<footer style="position: relative;top:-0px">
+    <br>
+    <p style="text-align: center; letter-spacing: 3px; font-size: 30px; font-family: 'Comme', sans-serif;x"> &copy G K YUVARAAJ</p>
+<nav>
+    <a href="https://www.linkedin.com/in/yuvaraaj-g-k-5bba9225b/"><img id="icons" src="./assets/linkedin.jpg" >&nbsp;&nbsp;</a>
+    
+    
+    <a href="https://www.facebook.com/yuvaraaj.yuvaraaj.543">&nbsp;&nbsp;<img id="icons" src="./assets/facebook.jpg" ></a>
+    <br>
+</nav>
+<br>
+</footer>
+</html>
